@@ -48,6 +48,7 @@
         'views/token_screen.xml',
         # 'wizard/token_screen.xml',
         'views/menu.xml',
+        'views/web_view.xml',
         'data/cron.xml',
 
     ],
