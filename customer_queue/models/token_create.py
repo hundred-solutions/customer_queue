@@ -15,5 +15,6 @@ class TokenCreate(models.Model):
     def create(self, vals):
         if vals.get('name', _('New')) == _('New'):
             vals['name'] = self.env['ir.sequence'].next_by_code('customer.sequence') or _('New')
+            print(vals)
         result = super(TokenCreate, self).create(vals)
         return result
